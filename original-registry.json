@@ -5043,6 +5043,10 @@
             }
         },
         "deepwiki": {
+            "description": "AI-powered codebase understanding and documentation",
+            "tier": "Official",
+            "status": "Active",
+            "transport": "sse",
             "url": "https://mcp.deepwiki.com/sse"
         },
         "dart": {
@@ -5060,9 +5064,10 @@
             ]
         },
         "perplexity-mcp": {
-            "command": "uvx",
+            "command": "npx",
             "args": [
-                "perplexity-mcp"
+                "-y",
+                "@perplexity-ai/mcp-server"
             ],
             "env": {
                 "PERPLEXITY_API_KEY": "{PERPLEXITY_API_KEY}",
